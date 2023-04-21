@@ -62,7 +62,7 @@ Once the game is over, an alert will show and when you click OK the game will re
 - Kevin Witeker that helped with the testing
 - Jessica Rydberg that helped with testing and coding questions.
 
-- Images was taken from https://rpsls.net/#91np2.
+- Images and some code was taken from https://rpsls.net/#91np2.
 
  - Font where provided from Goggle fonts.
 
