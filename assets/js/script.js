@@ -24,8 +24,10 @@ buttons.forEach(button => {
 
     if (playerScore === 5) {
       alert("You win!");
+      resetGame();
     } else if (computerScore === 5) {
       alert("Computer wins");
+      resetGame();
     }
   });
 });
@@ -80,4 +82,14 @@ function playRound(playerSelection, computerSelection) {
       return 'You win!';
     }
   }
+}
+
+function resetGame() {
+  playerScore = 0;
+  computerScore = 0;
+  result.textContent = '';
+  playerChoiceElement.textContent = '';
+  computerChoiceElement.textContent = '';
+  playerScoreElement.textContent = '0';
+  computerScoreElement.textContent = '0';
 }

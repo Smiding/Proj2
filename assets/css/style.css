@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
-
-
 body {
   font-family: 'Prompt', sans-serif;
   margin: 0;
@@ -11,7 +8,6 @@ body {
   font-weight: 300;
   font-size: x-large;
   background-color: grey;
-
 }
 
 .container {
@@ -21,34 +17,29 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  margin-top: 20px; /* add margin-top */
 }
 
 h1 {
-    margin-top: 0;
-    
-    align-items: center;
-  }
-  
-  h1 img {
-    vertical-align: middle;
-    padding: 0;
-    margin: 0;
-  }
-  
+  margin-top: 0;
+  align-items: center;
+}
+
+h1 img {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
 
 .choices {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-}
-
-.weapon {
-    color: red;
+  margin-top: 10px; 
+  color: red;
 }
 
 .btn {
-  margin: 0 20px;
-  
+  margin: 0 10px; 
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -57,6 +48,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px; 
 }
 
 .btn img {
@@ -79,11 +71,11 @@ h1 {
 .score {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px; 
 }
 
 .score p {
-  margin: 0 30px;
+  margin: -40px 30px;
 }
 
 .score-label {
@@ -91,58 +83,52 @@ h1 {
   font-weight: bold;
 }
 
-
-
 .score-value {
   color: #2ecc71;
   font-weight: bold;
 }
 
-
 @media (max-width: 480px) {
-    body {
-      font-size: large;
-    }
-    
-    .container {
-      padding: 0 10px;
-    }
-    
-    .choices {
-      flex-wrap: wrap;
-    }
-    
-    .btn {
-      width: 45%;
-      margin: 10px;
-    }
+  body {
+    font-size: large;
   }
-  
-  
-  @media (min-width: 481px) and (max-width: 768px) {
-    body {
-      font-size: x-large;
-    }
-    
-    .btn {
-      width: 30%;
-      margin: 10px;
-    }
+
+  .container {
+    padding: 0 10px;
   }
-  
- 
-  @media (min-width: 769px) {
-    body {
-      font-size: xx-large;
-    }
-    
-    .container {
-      padding: 0 50px;
-    }
-    
-    .btn {
-      width: 20%;
-      margin: 20px;
-    }
+
+  .choices {
+    flex-wrap: wrap;
   }
-  
+
+  .btn {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: x-large;
+  }
+
+  .btn {
+    width: 30%;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: xx-large;
+  }
+
+  .container {
+    padding: 0 50px;
+  }
+
+  .btn {
+    width: 20%;
+    margin: 20px;
+  }
+}
