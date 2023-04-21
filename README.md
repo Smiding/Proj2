@@ -55,8 +55,7 @@ Once the game is over, an alert will show and when you click OK the game will re
   Once the master branch has been selected, the page will be automatically 
   refreshed with  a detailed ribbon display to indicate the successful deployment.
   The live link can be found here - 
-  https://code-institute-org.github.io/love-running-2.0/index.html
-
+  https://smiding.github.io/Proj2/
 
 ## Credits
 
