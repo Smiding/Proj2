@@ -1,4 +1,7 @@
+// Select all elements with btn
 let buttons = document.querySelectorAll('.btn');
+
+// Select elements to display game results and scores
 let result = document.querySelector('#result');
 let playerChoiceElement = document.querySelector('#player-choice');
 let computerChoiceElement = document.querySelector('#computer-choice');
@@ -7,21 +10,30 @@ let computerScore = 0;
 let playerScoreElement = document.querySelector('#player-score');
 let computerScoreElement = document.querySelector('#computer-score');
 
+// Add event listeners
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     if (playerScore === 5 || computerScore === 5) {
       return;
     }
 
+
+    // Get player's choice
     let playerChoice = button.id;
+    // Get a random computer choice
     let computerChoice = getComputerSelection();
+    // Play a round of the game
     let gameResult = playRound(playerChoice, computerChoice);
+
+    // Update the game result
     result.textContent = gameResult;
     playerChoiceElement.textContent = `You chose ${playerChoice}`;
     computerChoiceElement.textContent = `The computer chose ${computerChoice}`;
     playerScoreElement.textContent = playerScore;
     computerScoreElement.textContent = computerScore;
 
+
+    // Check if either player or computer has reached a score of 5
     if (playerScore === 5) {
       alert("You win!");
       resetGame();
@@ -32,12 +44,16 @@ buttons.forEach(button => {
   });
 });
 
+
+//Random computer choice
 function getComputerSelection() {
   let choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
   let randomIndex = Math.floor(Math.random() * choices.length);
   return choices[randomIndex];
 }
 
+
+// Play a round of the game and show results
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
     return "It's a tie!";
@@ -84,6 +100,8 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
+
+// Reset the game when finished
 function resetGame() {
   playerScore = 0;
   computerScore = 0;
