@@ -1,3 +1,4 @@
+/* Styles for the body element */
 body {
   font-family: 'Prompt', sans-serif;
   margin: 0;
@@ -10,6 +11,8 @@ body {
   background-color: grey;
 }
 
+
+/* Styles for the container element */
 .container {
   max-width: 600px;
   text-align: center;
@@ -17,20 +20,23 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  margin-top: 20px; /* add margin-top */
+  margin-top: 20px; 
 }
 
+/* Styles for the h1 element */
 h1 {
   margin-top: 0;
   align-items: center;
 }
 
+/* Styles for image element in the h1 element */
 h1 img {
   vertical-align: middle;
   padding: 0;
   margin: 0;
 }
 
+/* Styles for the choices*/
 .choices {
   display: flex;
   justify-content: center;
@@ -38,6 +44,7 @@ h1 img {
   color: red;
 }
 
+/* Styles for buttons */
 .btn {
   margin: 0 10px; 
   color: #fff;
@@ -51,15 +58,18 @@ h1 img {
   padding: 10px; 
 }
 
+/* Styles for image element in buttons element */
 .btn img {
   width: 100%;
   height: auto;
 }
 
+/* Styles for the hover effect on the buttons */
 .btn:hover {
   transform: scale(1.8);
 }
 
+/* Styles for the result element */
 .result {
   padding-top: 20px;
   font-size: 45px;
