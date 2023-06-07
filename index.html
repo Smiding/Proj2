@@ -5,52 +5,55 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>
-            <span class="line1">
-              <span class="R">R</span><img class="o" src="assets/images/rock.png" alt="rock"><span class="ck">ck</span>
-              
-              
-              <span class="p">P</span><img class="a" src="assets/images/paper.png" alt="Paper"><span class="per">per</span>
-              
-            </span>
-            <span class="line2">
-              <br><span class="s">S</span><img class="c" src="assets/images/scissors.png" alt="Scissors"><span class="issors">issors</span>
-              
-              
-              <span class="li">Li</span><img class="z" src="assets/images/lizard.png" alt="Lizard"><span class="ard">ard</span>&nbsp;<br>
-              
-              
-            </span>
-            <span class="line3">
-              <span class="sp">Sp</span><img class="o2" src="assets/images/spock.png" alt="Spock"><span class="ck">ck</span>
-              
-            </span>
-          </h1>
-          
-          
-        <p class="weapon">Choose your weapon to start the game<br> First to five</p>
-        <div class="choices">
-          <img class="btn" id="rock" src="assets/images/rock.png" alt="Rock">
-          <img class="btn" id="paper" src="assets/images/paper.png" alt="Paper">
-          <img class="btn" id="scissors" src="assets/images/scissors.png" alt="Scissors">
-          <img class="btn" id="lizard" src="assets/images/lizard.png" alt="Lizard">
-          <img class="btn" id="spock" src="assets/images/spock.png" alt="Spock">
-        </div>
-        <p id="result"></p>
-        <div class="game-info">
-          <p id="player-choice"></p>
-          <p id="computer-choice"></p>
-        </div>
-        <div class="score">
-          <p class="score-label">Player</p>
-          <p id="player-score" class="score-value">0</p>
-          <p class="score-label">Computer</p>
-          <p id="computer-score" class="score-value">0</p>
-        </div>
-      </div>
-      
+  
+  <!-- Game container -->
+  <div class="container">
+    <!-- Game title -->
+    <h1>
+      <span class="line1">
+        <span class="R">R</span><img class="o" src="assets/images/rock.png" alt="rock"><span class="ck">ck</span>
+        <span class="p">P</span><img class="a" src="assets/images/paper.png" alt="Paper"><span class="per">per</span>
+      </span>
+      <span class="line2">
+        <br><span class="s">S</span><img class="c" src="assets/images/scissors.png" alt="Scissors"><span class="issors">issors</span>
+        <span class="li">Li</span><img class="z" src="assets/images/lizard.png" alt="Lizard"><span class="ard">ard</span>&nbsp;<br>
+      </span>
+      <span class="line3">
+        <span class="sp">Sp</span><img class="o2" src="assets/images/spock.png" alt="Spock"><span class="ck">ck</span>
+      </span>
+    </h1>
 
+    <!-- Game instructions -->
+    <p class="weapon">Choose your weapon to start the game<br> First to five</p>
+
+    <!-- Game choices -->
+    <div class="choices">
+      <img class="btn" id="rock" src="assets/images/rock.png" alt="Rock">
+      <img class="btn" id="paper" src="assets/images/paper.png" alt="Paper">
+      <img class="btn" id="scissors" src="assets/images/scissors.png" alt="Scissors">
+      <img class="btn" id="lizard" src="assets/images/lizard.png" alt="Lizard">
+      <img class="btn" id="spock" src="assets/images/spock.png" alt="Spock">
+    </div>
+
+    <!-- Game result message -->
+    <p id="result"></p>
+
+    <!-- Game info -->
+    <div class="game-info">
+      <p id="player-choice"></p>
+      <p id="computer-choice"></p>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="score">
+      <p class="score-label">Player</p>
+      <p id="player-score" class="score-value">0</p>
+      <p class="score-label">Computer</p>
+      <p id="computer-score" class="score-value">0</p>
+    </div>
+  </div>
+
+  <!-- JavaScript file -->
   <script src="assets/js/script.js"></script>
 </body>
 </html>

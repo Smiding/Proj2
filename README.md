@@ -1,6 +1,6 @@
 # Rock-Paper-Scissors-Lizard-Spock
 This repository contains a simple implementation of the popular game Rock-Paper-Scissors-Lizard-Spock using HTML, CSS, and JavaScript. The game is played on a web browser and provides an interactive user interface for players to make their moves and keep track of the score.
-
+![My image](assets/images/title.png)
 
 ## How to Play
 
